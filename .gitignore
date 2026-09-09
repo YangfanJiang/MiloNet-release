@@ -1,0 +1,75 @@
+
+# Local environments and credentials
+/.venv/
+/.venv-corpus/
+.env
+!.env.example
+
+# Python and editor artifacts
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+
+# Generated corpus/runtime outputs
+/Original_documents*/
+/Processed_documents*/
+/Runtime/
+/chroma_db*/
+/global_id_map.json
+/file_structure.txt
+/file_structure.generated.txt
+/tool_access_info.txt
+/all_doc_tool.txt
+/tool_long_tool_description.txt
+/structured_corpus_manifest.json
+/structured_manifest.json
+raw_responses.txt
+retrieval_traces*.txt
+hashing_name_mapping.json
+processed_files_map.json
+
+# Downloaded benchmark data
+ragbench_test.jsonl
+
+# Query, evaluation, and cost outputs
+/console_output.txt
+/evaluation_traces.jsonl
+/extracted_facts_*.jsonl
+/results*.jsonl
+/my_rag_output*.jsonl
+/retrieval_analysis_data_*.jsonl
+/response_quality_evaluation_*.json*
+/response_quality_diagnostics_*.json*
+/baseline_metrics.jsonl
+/raptor_run.jsonl
+evaluation_data_*.json*
+/cost_logs/
+/cost_profile*/
+
+# Corpus-construction intermediates
+embedding_metadata.json
+doc_summary_dict.json
+organized_structure*.json
+partial_result.json
+checkpoint.pkl
+name_mapping.json
+txt_docs/
+Ori-docs/
+New_Folder_Structure/
+
+# Source documents and local archives are distributed separately
+*.pdf
+*.docx
+*.zip
+
+# Local logs and database files
+*.log
+*.out
+*.err
+*.sqlite
+*.sqlite3
